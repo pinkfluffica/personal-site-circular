@@ -32,8 +32,8 @@
 		});
 
     	$('.quotes').bxSlider({
-			auto: true,
-			autoStart: true,
+			auto: false,
+			autoStart: false,
 			pause: 5000,
 			controls: false,
 			adaptiveHeight: true,
