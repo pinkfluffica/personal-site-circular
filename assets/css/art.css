@@ -1,0 +1,91 @@
+/*Art CSS*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*-------
+grid
+-------*/
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+
+
+.two-thirds {
+	width: 66.66%
+}
+
+.one-third {
+	width: 33.33%
+}
+
+.fifty {
+    width: 50%;
+}
+
+@media screen and (max-width: 740px) {
+    .column {
+        width: 100%;
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+    .two-thirds {
+    	width: 100%
+    }
+    .one-third {
+    	width: 100%
+    }
+}
+
+
+body {
+	/*background-image: url('../../art-img/video/moon_blood_silent.mp4');*/
+	background-color: black;
+}
+
+video.fullscreen {
+	position: fixed;
+ 	top: 50%;
+ 	left: 50%;
+ 	min-width: 100%;
+ 	min-height: 100%;
+ 	width: auto;
+	height: auto;
+	z-index: -100;
+ 	transform: translate(-50%, -50%);
+}
+
+.text-backer {
+	background-color: rgba(0,0,0,0.5);
+	width: 80%;
+	margin: 0 auto;
+	padding: 40px;
+	/*text-align: center;*/
+	border-radius: 5px;
+	color: white;
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+.thumb {
+	width: 100%;
+	background-color: pink; 
+}
