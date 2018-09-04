@@ -34,6 +34,10 @@ grid
     width: 50%;
 }
 
+.quarter {
+	width: 25%;
+}
+
 @media screen and (max-width: 740px) {
     .column {
         width: 100%;
@@ -47,12 +51,23 @@ grid
     .one-third {
     	width: 100%
     }
+    .quarter {
+    	width: 100%;
+    }
 }
 
+@media screen and (min-width: 741px) and (max-width: 1023px) {
+	.quarter {
+		width: 50%;
+	}
+}
+
+/*Page styles*/
 
 body {
 	/*background-image: url('../../art-img/video/moon_blood_silent.mp4');*/
 	background-color: black;
+	font-family: 'Open Sans', sans-serif;
 }
 
 video.fullscreen {
@@ -77,15 +92,52 @@ video.fullscreen {
 	color: white;
 }
 
+h1, h2, h3, caption {
+	font-family: 'Martel', serif;
+}
+
 h1 {
 	color: white;
+	text-align: center;
 }
 
 p {
 	color: white;
+	text-align: center;
 }
 
 .thumb {
 	width: 100%;
-	background-color: pink; 
+	/*background-color: pink; */
 }
+
+.thumb img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.thumb a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.lightbox {
+	width: 200%;
+    height: 600px;
+    position: absolute;
+    left: -50%;
+    padding: 0 50px;
+}
+
+.lightbox img {
+	height: 100%;
+	display: inline-block;
+}
+
+
+/*.photo-one img {
+
+}*/
+
+
