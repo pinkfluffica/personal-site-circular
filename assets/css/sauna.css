@@ -1,0 +1,120 @@
+/*sauna css*/
+
+body {
+	color: #282827;
+	font-size: 16px;
+	font-family: 'Inria Serif', serif;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Sen', sans-serif;
+	/*letter-spacing: 1px;*/
+	font-weight: normal;
+	/*text-decoration: underline;*/
+}
+
+h2 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: 25px;
+}
+
+p, span, ul li {
+	font-family: 'Sen', sans-serif;
+}
+
+p span {
+	font-weight: bold;
+	font-size: 1.3rem;
+	padding: 5px;
+	margin-top: 10px;
+	/*border: 1px solid white;*/
+	/*display: block;*/
+}
+
+ul li {
+	margin: 10px 0;
+}
+
+td {
+	padding: 2px 8px;
+	letter-spacing: 1px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 2;
+	grid-template-rows: 2;
+	height: 100vh;
+	width: 100vw;
+	/*padding: 20px;*/
+	background-color: #81C97D;
+}
+
+
+
+.grid-child {
+	padding: 30px;
+}
+
+.grid-child:nth-child(1) {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-column-end: 1;
+	grid-row-end: 1;
+	/*background-color: red; */
+}
+
+.grid-child:nth-child(2) {
+	grid-column-start: 2;
+	grid-row-start: 1;
+	grid-column-end: 2;
+	grid-row-end: 1;
+	background-image: url('../img/sauna.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/*background-color: blue; */
+}
+
+.grid-child:nth-child(3) {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-column-end: 1;
+	grid-row-end: 2;
+	background-color: #A0CE9C; 
+}
+
+.grid-child:nth-child(4) {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-column-end: 2;
+	grid-row-end: 2;
+	background-color: #4546C7; 
+	color: white;
+}
+
+.grid-child img {
+	width: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding: 0 10px;
+	}
+	.grid-container {
+		display: block;
+		height: auto;
+		width: auto;
+	}
+	.grid-child {
+		height: auto;
+		width: 100%;
+	}
+	.grid-child:nth-child(2) {
+		height: 70vh;
+	}
+}
